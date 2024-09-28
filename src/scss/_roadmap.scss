@@ -1,0 +1,336 @@
+.roadmap {
+  margin: 150px 0;
+
+  @media (max-width: $breakpoint1450) {
+    margin: 100px 0;
+  }
+
+  @media (max-width: $breakpoint992) {
+    margin: 80px 0;
+  }
+
+  @media (max-width: $breakpoint768) {
+    margin: 60px 0;
+  }
+
+  // .roadmap__inner
+
+  &__inner {}
+
+  // .roadmap__head
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    grid-row: 24px;
+    align-items: center;
+    max-width: 480px;
+    margin: 0 auto 70px;
+    text-align: center;
+  }
+
+  // .roadmap__title
+
+  &__title {}
+
+  // .roadmap__text
+
+  &__text {
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--text-2);
+  }
+
+  // .roadmap__blocks
+
+  &__blocks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+
+    @media (max-width: $breakpoint992) {
+      row-gap: 40px;
+    }
+  }
+
+  // .roadmap__blocks-line
+
+  &__blocks-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: calc(100% + 200px);
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: $breakpoint1450) {
+      width: 30px;
+      height: calc(100% + 220px);
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    @media (max-width: $breakpoint992) {
+      left: -14px;
+      width: 36px;
+    }
+
+
+    @media (max-width: $breakpoint768) {
+      left: -16px;
+      height: calc(100% + 146px);
+
+      img {
+        object-fit: fill;
+      }
+    }
+  }
+
+  // .roadmap__block
+
+  &__block {
+    position: relative;
+    padding-left: 72px;
+
+    &.disabled {
+      .roadmap__block-title {
+        background: linear-gradient(180deg, #2e2e2e 0%, rgba(46, 46, 46, 0) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .roadmap__block-sub {
+        background: linear-gradient(270deg, #2e2e2e 0%, rgba(46, 46, 46, 0) 100%);
+        text-transform: uppercase;
+        text-align: center;
+        background: linear-gradient(180deg, #616161 0%, rgba(97, 97, 97, 0) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .roadmap__column-top {
+        background: #151515;
+        opacity: 0.8;
+      }
+
+      .roadmap__column-title {
+        color: #515151;
+      }
+
+      .roadmap__column-texts {
+        color: #515151;
+
+        p {
+          color: #515151;
+        }
+
+        ul li {
+          color: #515151;
+        }
+      }
+    }
+
+    @media (max-width: $breakpoint1450) {
+      padding-left: 42px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      padding-left: 20px;
+    }
+  }
+
+  // .roadmap__block-head
+
+  &__block-head {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-bottom: 20px;
+    max-width: 600px;
+  }
+
+  // .roadmap__block-title
+
+  &__block-title {
+    display: flex;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @media (max-width: $breakpoint768) {
+      font-size: 20px;
+    }
+  }
+
+  // .roadmap__block-sub
+
+  &__block-sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 6px 14px;
+    margin-top: -12px;
+    margin-left: 4px;
+    border-radius: 500px;
+    background-color: var(--main-orange);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 130%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black-color);
+
+    @media (max-width: $breakpoint768) {
+      font-size: 10px;
+      padding: 4px 8px;
+    }
+  }
+
+  // .roadmap__columns
+
+  &__columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+
+    @media (max-width: $breakpoint1450) {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 16px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .roadmap__column
+
+  &__column {
+    display: grid;
+    row-gap: 34px;
+    align-content: baseline;
+
+    @media (max-width: $breakpoint992) {
+      row-gap: 16px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      row-gap: 8px;
+    }
+  }
+
+  // .roadmap__column-top
+
+  &__column-top {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 24px;
+    border-radius: 20px;
+    background-color: #272727;
+    min-height: 118px;
+
+    @media (max-width: $breakpoint768) {
+      padding: 8px;
+      min-height: 60px;
+    }
+  }
+
+  // .roadmap__column-icon
+
+  &__column-icon {
+    @media (max-width: $breakpoint768) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  // .roadmap__column-title
+
+  &__column-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @media (max-width: $breakpoint768) {
+      font-size: 12px;
+    }
+  }
+
+  // .roadmap__column-bottom
+
+  &__column-bottom {}
+
+  // .roadmap__column-texts
+
+  &__column-texts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: var(--text-2);
+
+    p {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+      color: var(--text-2);
+    }
+
+    ul li {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+      color: var(--text-2);
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 12px;
+
+      p {
+        font-size: 12px;
+      }
+
+      ul li {
+        font-size: 12px;
+      }
+    }
+  }
+
+  // .roadmap__block-text
+
+  &__block-text {
+    font-size: 12px;
+    line-height: 130%;
+    color: #575757;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 10px;
+    }
+  }
+}

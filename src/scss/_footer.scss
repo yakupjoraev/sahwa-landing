@@ -1,0 +1,63 @@
+// Footer
+.footer {
+  position: relative;
+  z-index: 2;
+  padding: 30px 0 40px;
+  background-color: #060606;
+
+  // .footer__inner
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 176px;
+
+    @media (max-width: $breakpoint1450) {
+      column-gap: 60px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      flex-direction: column;
+      row-gap: 40px;
+    }
+  }
+
+  .logo {
+    z-index: 1;
+  }
+
+  .socials {
+    margin-left: auto;
+
+    @media (max-width: $breakpoint992) {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: $breakpoint768) {
+    .logo__img {
+      width: 80px;
+      height: auto;
+    }
+  }
+}
+
+.nav--footer {
+  .menu {
+    position: static;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+    }
+  }
+
+  .menu__item {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}

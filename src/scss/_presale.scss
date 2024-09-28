@@ -1,0 +1,134 @@
+.presale {
+  position: relative;
+  z-index: 1;
+  margin: 150px 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    left: 72%;
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    background-color: var(--main-orange);
+    filter: blur(150px);
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  @media (max-width: $breakpoint768) {
+    &::before {
+      content: none;
+    }
+  }
+
+  @media (max-width: $breakpoint1450) {
+    margin: 100px 0;
+  }
+
+  @media (max-width: $breakpoint992) {
+    margin: 80px 0;
+  }
+
+  @media (max-width: $breakpoint768) {
+    margin: 60px 0;
+  }
+
+  // .presale__inner
+
+  &__inner {
+    padding: 74px 40px;
+    background-image: image-set(url("../img/presale/bg.webp") 1x type("image/webp"), url("../img/presale/bg.png") 1x, url("../img/presale/bg@2x.webp") 2x type("image/webp"), url("../img/presale/bg@2x.png") 2x);
+    background-image: -webkit-image-set(url("../img/presale/bg.webp") 1x type("image/webp"), url("../img/presale/bg.png") 1x, url("../img/presale/bg@2x.webp") 2x type("image/webp"), url("../img/presale/bg@2x.png") 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+
+    @media (max-width: $breakpoint768) {
+      padding: 60px 20px;
+    }
+  }
+
+  // .presale__info
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  // .presale__title
+
+  &__title {
+    text-align: center;
+  }
+
+  // .presale__times
+
+  &__times {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  // .presale__time
+
+  &__time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 6px;
+  }
+
+  // .presale__time-sum
+
+  &__time-sum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 21px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.05);
+    background: #494949;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: var(--white-color);
+
+    @media (max-width: $breakpoint768) {
+      padding: 8px;
+      font-size: 28px;
+    }
+  }
+
+  // .presale__time-text
+
+  &__time-text {
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    opacity: 0.6;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 20px;
+    }
+  }
+
+  // .presale__btn
+
+  &__btn {
+    max-width: 340px;
+    width: 100%;
+
+    @media (max-width: $breakpoint768) {
+      max-width: 100%;
+    }
+  }
+}

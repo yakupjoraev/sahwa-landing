@@ -1,0 +1,131 @@
+.invitation {
+  position: relative;
+  z-index: 1;
+  padding: 36px 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -80%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 378px;
+    background-color: var(--main-orange);
+    filter: blur(150px);
+  }
+
+  // .invitation__inner
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 90px;
+
+    @media (max-width: $breakpoint1450) {
+      column-gap: 40px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      max-width: 740px;
+      flex-direction: column;
+      row-gap: 40px;
+    }
+  }
+
+  // .invitation__picture
+
+  &__picture {
+    flex: 0 0 542px;
+
+    @media (max-width: $breakpoint1450) {
+      flex: 0 0 420px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex: 0 1 auto;
+    }
+  }
+
+  // .invitation__pic
+
+  &__pic {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  // .invitation__info
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+
+    @media (max-width: $breakpoint1450) {
+      row-gap: 36px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      row-gap: 24px;
+    }
+  }
+
+  // .invitation__title
+
+  &__title {}
+
+  // .invitation__text
+
+  &__text {
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--white-color);
+
+    @media (max-width: $breakpoint992) {
+      font-size: 18px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 16px;
+    }
+  }
+
+  // .invitation__links
+
+  &__links {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    row-gap: 20px;
+
+
+    @media (max-width: $breakpoint992) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $breakpoint768) {
+      max-width: 740px;
+    }
+  }
+
+  // .invitation__link
+
+  &__link {
+    width: fit-content;
+
+    @media (max-width: $breakpoint992) {
+      width: 100%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      max-width: 740px;
+    }
+  }
+}
