@@ -12,46 +12,30 @@
 
 <body class="main__body">
   <div class="wrapper">
-    <div class="container">
-      <div class="pages">
-        <ul class="pages__list">
-          <li class="pages__item">
-            <a class="pages__link" href="main.html" target="_blank">
-              Main page
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <!-- Header -->
+    @@include('./html/_header.html')
 
-    <style>
-      .pages__list {
-        display: grid;
-        gap: 20px;
-        padding: 50px 0;
-      }
+    <!-- Main Page -->
+    <main>
+      @@include('./html/_hero.html')
+      @@include('./html/_presale.html')
+      @@include('./html/_info.html')
+      @@include('./html/_functions.html')
+      @@include('./html/_tokenemic.html')
+      @@include('./html/_roadmap.html')
+      @@include('./html/_community.html')
+      @@include('./html/_invitation.html')
+    </main>
 
-      .pages__item {
-        display: grid;
-      }
-
-      .pages__link {
-        padding: 20px;
-        background: #fff;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 120%;
-        color: #000;
-      }
-
-      .pages__link:hover {
-        background: var(--main-orange);
-        color: #fff;
-      }
-    </style>
+    <!-- Footer -->
+    @@include('./html/_footer.html')
   </div>
 
+
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./js/scripts.min.js"></script>
 

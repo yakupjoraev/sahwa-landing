@@ -12,46 +12,1079 @@
 
 <body class="main__body">
   <div class="wrapper">
+    <!-- Header -->
+    <header class="header header-pt">
+  <!-- Navbar -->
+  <nav class="nav">
     <div class="container">
-      <div class="pages">
-        <ul class="pages__list">
-          <li class="pages__item">
-            <a class="pages__link" href="main.html" target="_blank">
-              Main page
-            </a>
+      <div class="navbar">
+        <a class="logo" href="#"><img class="logo__img" width="105" height="70" src="./img/logo.svg" alt="logo"></a>
+
+        <ul class="menu">
+          <li class="menu__item"><a href="#about" class="menu__item-link">About</a></li>
+          <li class="menu__item"><a href="#featured" class="menu__item-link">Featured</a></li>
+          <li class="menu__item"><a href="#roadmap" class="menu__item-link">Roadmap</a></li>
+          <li class="menu__item"><a href="#tokenomic" class="menu__item-link">Tokenomic</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link">Whitepaper
+              <span class="menu__item-link-sub">SOON</span></a></li>
+          <li class="menu__item"><a href="#contacts" class="menu__item-link">Contacts</a></li>
+        </ul>
+
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <!-- Main Page -->
+    <main>
+      <section class="hero">
+  <div class="hero__container">
+    <div class="hero__inner">
+      <div class="hero__info">
+
+        <h1 hidden>SAHWA CORPORATION</h1>
+        <div class="hero__title">
+          <p class="hero__sub">The game in the Build-to-Earn genre </p>
+          <img src="./img/hero-title.png" alt="title">
+        </div>
+
+        <p class="hero__text">Добро пожаловать в игру, где каждый из вас — ключевой элемент новой мегакорпорации!
+          Объедините усилия, чтобы построить бизнес-империю будущего.</p>
+
+        <a class="hero__btn btn" href="#">Play SAHWA</a>
+      </div>
+
+      <div class="hero__picture">
+        <picture>
+          <source srcset="./img/hero/pic.webp 1x, ./img/hero/pic@2x.webp 2x" type="image/webp">
+          <source srcset="./img/hero/pic.png 1x, ./img/hero/pic@2x.png 2x" type="image/png">
+          <img src="./img/hero/pic.png" srcset="./img/hero/pic@2x.png" alt="Alt">
+        </picture>
+      </div>
+    </div>
+
+    <div class="clouds">
+      <div class="cloud-1">
+        <picture>
+          <source srcset="./img/cloud/1.webp" type="image/webp">
+          <source srcset="./img/cloud/1.png" type="image/png">
+          <img src="./img/cloud/1.png" alt="cloud">
+        </picture>
+      </div>
+
+      <div class="cloud-2">
+        <picture>
+          <source srcset="./img/cloud/2.webp" type="image/webp">
+          <source srcset="./img/cloud/2.png" type="image/png">
+          <img src="./img/cloud/2.png" alt="cloud">
+        </picture>
+      </div>
+
+      <div class="cloud-3">
+        <picture>
+          <source srcset="./img/cloud/3.webp" type="image/webp">
+          <source srcset="./img/cloud/3.png" type="image/png">
+          <img src="./img/cloud/3.png" alt="cloud">
+        </picture>
+      </div>
+
+      <div class="cloud-4">
+        <picture>
+          <source srcset="./img/cloud/4.webp" type="image/webp">
+          <source srcset="./img/cloud/4.png" type="image/png">
+          <img src="./img/cloud/4.png" alt="cloud">
+        </picture>
+      </div>
+
+      <div class="cloud-5">
+        <picture>
+          <source srcset="./img/cloud/5.webp" type="image/webp">
+          <source srcset="./img/cloud/5.png" type="image/png">
+          <img src="./img/cloud/5.png" alt="cloud">
+        </picture>
+      </div>
+
+    </div>
+  </div>
+</section>
+      <section class="presale">
+  <div class="container">
+    <div class="presale__inner">
+      <div class="presale__info">
+        <h3 class="title presale__title">Presale Starts In</h3>
+        <div class="presale__times">
+          <div class="presale__time">
+            <div class="presale__time-sum">0</div>
+            <p class="presale__time-text">D</p>
+          </div>
+
+          <div class="presale__time">
+            <div class="presale__time-sum">0</div>
+            <p class="presale__time-text">H</p>
+          </div>
+
+          <div class="presale__time">
+            <div class="presale__time-sum">0</div>
+            <p class="presale__time-text">M</p>
+          </div>
+
+          <div class="presale__time">
+            <div class="presale__time-sum">0</div>
+            <p class="presale__time-text">S</p>
+          </div>
+        </div>
+
+        <button type="button" class="presale__btn btn" disabled>PreSale</button>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="info" data-aos="fade-up" id="about">
+  <div class="container">
+    <div class="info__inner">
+      <div class="info__top">
+        <div class="info__picture">
+          <picture>
+            <source srcset="./img/info/pic.webp 1x, ./img/info/pic@2x.webp 2x" type="image/webp">
+            <source srcset="./img/info/pic.png 1x, ./img/info/pic@2x.png 2x" type="image/png">
+            <img class="info__pic" src="./img/info/pic.png" srcset="./img/info/pic@2x.png" alt="Alt">
+          </picture>
+        </div>
+
+        <div class="info__rows">
+          <div class="info__row">
+            <h3 class="title info__title">Идея проекта <br /> SAHWA Corporation</h3>
+            <p class="info__text"><b>SAHWA Corporation</b> — международная корпорация, нацеленная на создание глобальной
+              экосистемы, интегрирующей технологии блокчейна, искусственный интеллект, финансовые решения и
+              образовательные инициативы. Это амбициозный проект, стремящийся объединить различные сферы экономики для
+              повышения эффективности как государственных, так и частных структур.
+            </p>
+          </div>
+
+          <div class="info__row">
+            <h3 class="title info__title">Цель проекта</h3>
+            <p class="info__text">SAHWA Corporation стремится стать глобальной корпорацией, интегрирующей передовые
+              технологии для обеспечения прозрачности и безопасности финансовых операций. Через развитие токена SAH и
+              социального блокчейна проект будет способствовать укреплению международных экономических связей,
+              предоставляя новые возможности для бизнеса и пользователей.
+            </p>
+          </div>
+
+          <div class="info__row">
+            <a class="info__btn btn" href="#">Play SAHWA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="info__bottom">
+        <ul class="info__list">
+          <li class="info__item">
+            <h4 class="info__item-label">Развитие передовых технологий</h4>
+            <div class="info__item-texts">
+              <p>SAHWA Corporation планирует стать лидером в разработке и внедрении инновационных решений в области
+                блокчейна, искусственного интеллекта, метавселенной и средств связи. Эти технологии будут играть
+                ключевую роль в улучшении процессов управления и взаимодействия между разными отраслями.
+              </p>
+            </div>
+          </li>
+
+          <li class="info__item">
+            <h4 class="info__item-label">Социальный
+              блокчейн</h4>
+            <div class="info__item-texts">
+              <p>Основной технологией станет социальный блокчейн, который обеспечит прозрачность и безопасность для
+                государственных и корпоративных структур. Он позволит снизить операционные затраты, защитить от
+                финансовых махинаций и снизить комиссии для пользователей при финансовых транзакциях.
+
+              </p>
+            </div>
+          </li>
+
+          <li class="info__item">
+            <h4 class="info__item-label">Токен SAH как альтернатива фиатным валютам</h4>
+            <div class="info__item-texts">
+              <p>Токен SAH станет важным элементом внутри экосистемы, используясь для оплаты и обмена. Он будет
+                интегрирован во все продукты и сервисы SAHWA Corporation и ее партнеров, предоставляя пользователям
+                надежный инструмент для взаимодействия в рамках экосистемы. Токен SAH предоставит держателям новые
+                возможности, такие как участие в голосованиях, майнинг других криптовалют через приложение, а также
+                доступ к дополнительным обновлениям и эксклюзивным инвестиционным возможностям.
+
+              </p>
+            </div>
+          </li>
+
+          <li class="info__item">
+            <h4 class="info__item-label">Виртуальное гражданство</h4>
+            <div class="info__item-texts">
+              <p>SAHWA предлагает концепцию виртуального гражданства, предоставляющую участникам дополнительные права и
+                возможности в странах, где будет реализован социальный блокчейн. Это открывает доступ к специальным
+                привилегиям и возможностям для активных участников сообщества.
+              </p>
+            </div>
+          </li>
+
+          <li class="info__item">
+            <h4 class="info__item-label">Международный банк SAHWA</h4>
+            <div class="info__item-texts">
+              <p>Создание международного банка, который станет связующим звеном между традиционными финансовыми
+                системами и криптовалютами. Банк обеспечит интеграцию блокчейн-технологий с реальной экономикой,
+                облегчая международные финансовые операции и создавая условия для свободного экономического обмена в
+                рамках дружественных юрисдикций.
+
+              </p>
+            </div>
           </li>
         </ul>
       </div>
     </div>
+  </div>
+</section>
+      <section class="functions" data-aos="fade-up" id="featured">
+  <div class="container">
+    <div class="functions__inner">
+      <div class="functions__top">
+        <div class="functions__head">
+          <h3 class="title functions__title">Функция HOLD в <br />
+            <span>SAHWA Corporation</span>
+          </h3>
+        </div>
 
-    <style>
-      .pages__list {
-        display: grid;
-        gap: 20px;
-        padding: 50px 0;
-      }
+        <div class="functions__info">
+          <div class="functions__picture">
+            <picture>
+              <source srcset="./img/functions/pic.webp 1x, ./img/functions/pic@2x.webp 2x" type="image/webp">
+              <source srcset="./img/functions/pic.png 1x, ./img/functions/pic@2x.png 2x" type="image/png">
+              <img class="functions__pic" width="540" height="590" src="./img/functions/pic.png"
+                srcset="./img/functions/pic@2x.png" alt="Alt">
+            </picture>
+          </div>
 
-      .pages__item {
-        display: grid;
-      }
+          <div class="functions__texts">
+            <h4 class="functions__subtitle">Преимущества участия в HOLD</h4>
+            <p class="functions__text">
+              Функция HOLD является ключевым элементом экосистемы SAHWA Corporation, предоставляющим пользователям
+              возможность замораживать свои намайненные токены SAH и получать доступ к уникальным привилегиям. Участие в
+              HOLD не только усиливает взаимодействие с платформой, но и открывает пользователям новые финансовые
+              возможности.
+            </p>
+            <p class="functions__text">Программа HOLD — это не просто заморозка токенов. Это стратегический инструмент
+              для пользователей, желающих расширить свои возможности в экосистеме SAHWA Corporation. Чем больше токенов
+              SAH пользователь замораживает, тем более привилегированным становится его статус, что дает доступ к
+              передовым финансовым инструментам, эксклюзивным предложениям и участию в майнинге ведущих криптовалют. 
+            </p>
+            <p class="functions__text">Инвесторы и пользователи, участвующие в HOLD, усиливают свое влияние в
+              экосистеме, а также получают долгосрочные выгоды, включая рост капитализации токенов и более широкие
+              перспективы для их использования на платформе.</p>
+          </div>
+        </div>
+      </div>
+      <div class="functions__bottom">
+        <ul class="functions__list">
+          <li class="functions__item">
+            <div class="functions__item-info">
+              <h5 class="functions__item-label">Дополнительные Airdrop</h5>
+              <div class="functions__item-texts">
+                <p>Владельцы токенов SAH, замораживающие свои активы в HOLD, получают приоритетное право на участие в
+                  эксклюзивных airdrop-программах. Это позволяет им увеличивать свои активы за счет получения бесплатных
+                  токенов, что повышает их долю в экосистеме SAHWA Corporation и стимулирует дальнейшее участие в
+                  развитии проекта.
+                </p>
+              </div>
+            </div>
 
-      .pages__link {
-        padding: 20px;
-        background: #fff;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 120%;
-        color: #000;
-      }
+            <div class="functions__item-icon">
+              <picture>
+                <source srcset="./img/functions/item-1.webp" type="image/webp">
+                <source srcset="./img/functions/item-1.png" type="image/png">
+                <img width="130" height="130" src="./img/functions/item-1.png" alt="icon">
+              </picture>
+            </div>
+          </li>
 
-      .pages__link:hover {
-        background: var(--main-orange);
-        color: #fff;
-      }
-    </style>
+          <li class="functions__item">
+            <div class="functions__item-info">
+              <h5 class="functions__item-label">Голосование и выборы</h5>
+              <div class="functions__item-texts">
+                <p>Владельцы токенов, участвующие в HOLD, могут принимать участие в системе голосования. Это включает
+                  голосование за стратегические направления компании, а также участие в выборах на руководящие позиции,
+                  такие как директор, HR и маркетолог. Данная функция делает каждого владельца токенов частью
+                  управленческой структуры, создавая больше прозрачности и демократичности в процессе принятия решений.
+
+                </p>
+              </div>
+            </div>
+
+            <div class="functions__item-icon">
+              <picture>
+                <source srcset="./img/functions/item-2.webp" type="image/webp">
+                <source srcset="./img/functions/item-2.png" type="image/png">
+                <img width="100" height="100" src="./img/functions/item-2.png" alt="icon">
+              </picture>
+            </div>
+          </li>
+
+          <li class="functions__item">
+            <div class="functions__item-info">
+              <h5 class="functions__item-label">Майнинг BTC, LTC и других криптовалют</h5>
+              <div class="functions__item-texts">
+                <p>Участники программы HOLD получают уникальную возможность участвовать в майнинге таких топовых
+                  криптовалют, как Bitcoin (BTC), Litecoin (LTC) и других, через экосистему SAHWA Corporation. Это
+                  предложение позволяет пользователям увеличивать свои доходы не только за счет удержания SAH, но и
+                  посредством добычи ведущих цифровых активов на рынке.
+
+                </p>
+              </div>
+            </div>
+
+            <div class="functions__item-icon">
+              <picture>
+                <source srcset="./img/functions/item-3.webp" type="image/webp">
+                <source srcset="./img/functions/item-3.png" type="image/png">
+                <img width="100" height="100" src="./img/functions/item-3.png" alt="icon">
+              </picture>
+            </div>
+          </li>
+
+          <li class="functions__item">
+            <div class="functions__item-info">
+              <h5 class="functions__item-label">Эксклюзивные возможности</h5>
+              <div class="functions__item-texts">
+                <p>HOLD открывает пользователям доступ к ряду дополнительных преимуществ, включая специальные
+                  инвестиционные предложения, благотворительные программы и уникальные функции в разделах «Банк» и
+                  «Завод». Эти эксклюзивные возможности направлены на дальнейшее расширение финансовых инструментов и
+                  увеличение доходности для участников экосистемы.
+                </p>
+              </div>
+            </div>
+
+            <div class="functions__item-icon">
+              <picture>
+                <source srcset="./img/functions/item-4.webp" type="image/webp">
+                <source srcset="./img/functions/item-4.png" type="image/png">
+                <img width="100" height="100" src="./img/functions/item-4.png" alt="icon">
+              </picture>
+            </div>
+          </li>
+        </ul>
+        <div class="functions__picture">
+          <picture>
+            <source srcset="./img/functions/pic-2.webp 1x, ./img/functions/pic-2@2x.webp 2x" type="image/webp">
+            <source srcset="./img/functions/pic-2.png 1x, ./img/functions/pic-2@2x.png 2x" type="image/png">
+            <img class="functions__pic" width="790" height="1184" src="./img/functions/pic-2.png"
+              srcset="./img/functions/pic-2@2x.png" alt="Alt">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="tokenemic" data-aos="fade-up" id="tokenomic">
+  <div class="container">
+    <div class="tokenemic__inner">
+      <div class="tokenemic__head">
+        <h3 class="title tokenemic__title">Токеномика проекта <span>SAHWA Corporation</span></h3>
+        <p class="tokenemic__text tokenemic__text--bold">Общая эмиссия токенов: 100%</p>
+        <p class="tokenemic__text">Распределение токенов тщательно спланировано для поддержки долгосрочного роста
+          проекта и его экосистемы.</p>
+      </div>
+
+      <div class="tokenemic__main">
+        <div class="tokenemic__columns">
+          <div class="tokenemic__column orange-1">
+            <div class="tokenemic__column-head">
+              <h4 class="tokenemic__column-title">Ранние инвесторы</h4>
+              <p class="tokenemic__column-percent">1%</p>
+            </div>
+
+            <div class="tokenemic__column-texts">
+              <p>Выделенная доля для ключевых вкладчиков, которые поддерживали проект на начальном этапе. Эти инвесторы
+                играют важную роль в становлении компании и обеспечении ее начального капитала.</p>
+            </div>
+          </div>
+
+          <div class="tokenemic__column orange-2">
+            <div class="tokenemic__column-head">
+              <h4 class="tokenemic__column-title">Presale</h4>
+              <p class="tokenemic__column-percent">15%</p>
+            </div>
+
+            <div class="tokenemic__column-texts">
+              <p>Привлечение средств в ходе предпродажи распределяется на:</p>
+              <ul>
+                <li>– 51% на обеспечение ликвидности на биржах и поддержку торговли токеном;</li>
+                <li>– 49% для развития проекта,
+                  включая разработку технологий, создание офиса, маркетинг и организацию ICO</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tokenemic__column grey-1">
+            <div class="tokenemic__column-head">
+              <h4 class="tokenemic__column-title">Айрдроп</h4>
+              <p class="tokenemic__column-percent">4%</p>
+            </div>
+
+            <div class="tokenemic__column-texts">
+              <p>Доля токенов для бесплатного распространения среди сообщества, стимулирующая вовлеченность и рост
+                пользовательской базы. </p>
+            </div>
+          </div>
+
+          <div class="tokenemic__column grey-2">
+            <div class="tokenemic__column-head">
+              <h4 class="tokenemic__column-title">Трейдинг
+                (маркет-мейкер)</h4>
+              <p class="tokenemic__column-percent">12%</p>
+            </div>
+
+            <div class="tokenemic__column-texts">
+              <p>Поддержание стабильности курса токена на биржах и обеспечение достаточной ликвидности для торговли.
+              </p>
+            </div>
+          </div>
+
+          <div class="tokenemic__column grey-3">
+            <div class="tokenemic__column-head">
+              <h4 class="tokenemic__column-title">Майнинг в Telegram WEB app</h4>
+              <p class="tokenemic__column-percent">10%</p>
+            </div>
+
+            <div class="tokenemic__column-texts">
+              <p>Средства для стимулирования майнинга через приложение, а также для поддержки первого айрдропа. </p>
+            </div>
+          </div>
+
+          <div class="tokenemic__column grey-4">
+            <div class="tokenemic__column-head">
+              <h4 class="tokenemic__column-title">Майнинг через блокчейн WEB app</h4>
+              <p class="tokenemic__column-percent">7%</p>
+            </div>
+
+            <div class="tokenemic__column-texts">
+              <p>Токены, предназначенные для добычи посредством блокчейн-приложений, стимулируя активность и поддерживая
+                долгосрочный интерес.</p>
+            </div>
+          </div>
+
+          <div class="tokenemic__column grey-5">
+            <div class="tokenemic__column-head">
+              <h4 class="tokenemic__column-title">Фарминг в играх и образовательных проектах</h4>
+              <p class="tokenemic__column-percent">10%</p>
+            </div>
+
+            <div class="tokenemic__column-texts">
+              <p>Вознаграждение за активное участие пользователей в играх и образовательных платформах, входящих в
+                экосистему SAHWA.
+              </p>
+            </div>
+          </div>
+
+          <div class="tokenemic__column grey-6">
+            <div class="tokenemic__column-head">
+              <h4 class="tokenemic__column-title">«Tech» на развитие собственной экосистемы</h4>
+              <p class="tokenemic__column-percent">20%</p>
+            </div>
+
+            <div class="tokenemic__column-texts">
+              <p>Эти средства будут направлены на: </p>
+              <ul>
+                <li>– Разработку блокчейна первого уровня (L1).</li>
+                <li> – Интеграцию метавселенной, игр, искусственного интеллекта и других ключевых технологий.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tokenemic__column grey-7">
+            <div class="tokenemic__column-head">
+              <h4 class="tokenemic__column-title">Блокировка на срок от 2 до 10 лет</h4>
+              <p class="tokenemic__column-percent">20%</p>
+            </div>
+
+            <div class="tokenemic__column-texts">
+              <p>Токены, зарезервированные для долгосрочных фондов, обеспечивающие стабильность и долговременную
+                поддержку проекта.
+              </p>
+            </div>
+          </div>
+
+          <div class="tokenemic__column grey-8">
+            <div class="tokenemic__column-head">
+              <h4 class="tokenemic__column-title">Основателю компании</h4>
+              <p class="tokenemic__column-percent">1%</p>
+            </div>
+
+            <div class="tokenemic__column-texts">
+              <p>Личное вознаграждение основателю. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tokenemic__picture">
+          <img src="./img/tokenemic/pic.svg" alt="tokenemic cirkle">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="roadmap" data-aos="fade-up" id="roadmap">
+  <div class="container">
+    <div class="roadmap__inner">
+      <div class="roadmap__head">
+        <h3 class="title roadmap__title"><span>SAHWA</span> Roadmap</h3>
+        <!-- <p class="roadmap__text">Iaculis nisi integer sem euismod sit aliquet augue blandit id. In aliquam nullam risus
+          elit in feugiat quis sem.</p> -->
+      </div>
+
+      <div class="roadmap__blocks">
+
+        <div class="roadmap__block">
+          <div class="roadmap__blocks-line">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./img/roadmap/line-mobile.svg" />
+              <source media="(min-width: 768px)" srcset="./img/roadmap/line.svg" />
+              <img src="./img/roadmap/line.svg" alt="line" />
+            </picture>
+          </div>
+          <div class="roadmap__block-head">
+            <h4 class="roadmap__block-title">Q4 2024 <div class="roadmap__block-sub"><span>in progress </span></div>
+            </h4>
+
+          </div>
+
+          <div class="roadmap__columns">
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <img class="roadmap__column-icon" width="68" height="68" src="./img/roadmap/1.svg" alt="icon">
+                <h4 class="roadmap__column-title">Пресейл для ранних инвесторов (1% от всех токенов) </h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>На данный момент проводится пресейл, где ранние инвесторы могут получить 1% от общего объема
+                    токенов. Эта кампания была направлена на привлечение дополнительных средств, которые будут
+                    использованы для дальнейшего развития, маркетинга приложения SAHWA Corporation и разработки самой
+                    игры.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <img class="roadmap__column-icon" width="64" height="64" src="./img/roadmap/2.png" alt="icon">
+                <h4 class="roadmap__column-title">Разработка Web3 Mini App от SAHWA Corporation</h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>Наша команда опытных разработчиков активно работает над созданием Web3 Mini App, которое
+                    предоставит пользователям инновационные функции децентрализации. Мы стремимся как можно быстрее
+                    завершить разработку и предложить нашим пользователям удобное и функциональное решение.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <img class="roadmap__column-icon" width="64" height="64" src="./img/roadmap/3.png" alt="icon">
+                <h4 class="roadmap__column-title">Расширение сообщества SAHWA</h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>Мы активно увеличиваем наше присутствие в основных социальных сетях для расширения сообщества
+                    SAHWA. Это усилит экосистему, повысит вовлеченность и привлечет новых участников, что станет
+                    ключевым фактором в продвижении SAH токена и будущих функций приложения.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <img class="roadmap__column-icon" width="68" height="68" src="./img/roadmap/4.png" alt="icon">
+                <h4 class="roadmap__column-title">Запуск и тестирование Mini App SAHWA</h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>На данный момент Mini App находится в стадии финальной разработки. Мы уведомим сообщество о его
+                    готовности, чтобы все пользователи могли принять участие в тестировании и оставить обратную связь
+                    для оптимизации работы приложения.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <img class="roadmap__column-icon" width="68" height="68" src="./img/roadmap/5.png" alt="icon">
+                <h4 class="roadmap__column-title">Запуск майнинга токена SAH</h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>Майнинг токена SAH стартует вместе с запуском Mini App SAHWA. Это важный этап, который позволит
+                    пользователям начать добычу токенов напрямую через приложение.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <img class="roadmap__column-icon" width="68" height="68" src="./img/roadmap/1.svg" alt="icon">
+                <h4 class="roadmap__column-title">Старт пресейла токена SAH</h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>Пресейл токена SAH начнется после запуска функции майнинга и продолжится до момента листинга токена
+                    на децентрализованных биржах (DEX). Это возможность для раннего доступа к токенам перед их выходом
+                    на рынок.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <img class="roadmap__column-icon" width="68" height="68" src="./img/roadmap/6.png" alt="icon">
+                <h4 class="roadmap__column-title">Airdrop намайненных токенов </h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>Мы планируем раздачу намайненных токенов до завершения пресейла. Это произойдет до листинга на DEX,
+                    что позволит пользователям получить дополнительные выгоды от участия в проекте.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <img class="roadmap__column-icon" width="68" height="68" src="./img/roadmap/7.png" alt="icon">
+                <h4 class="roadmap__column-title"> Разработка децентрализованного кошелька</h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>В скором времени мы планируем разработать децентрализованный кошелек, который будет необходим для
+                    полного использования функций Mini App. Этот кошелек обеспечит безопасность транзакций и хранение
+                    криптовалют, добытых через приложение.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <img class="roadmap__column-icon" width="68" height="68" src="./img/roadmap/1.svg" alt="icon">
+                <h4 class="roadmap__column-title">HOLD токенов SAH для разблокировки новых функций</h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>
+                    Владельцы токенов SAH смогут разблокировать эксклюзивные функции, включая:  <br />
+                    - Дополнительные Airdrop  <br />
+                    - Голосование и выборы<br />
+                    - Майнинг других криптовалют, таких как Bitcoin и Litecoin<br />
+
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <img class="roadmap__column-icon" width="64" height="64" src="./img/roadmap/8.png" alt="icon">
+                <h4 class="roadmap__column-title">Листинг на децентрализованных биржах (DEX) </h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>По завершении пресейла токен SAH будет размещен на децентрализованных биржах. Это обеспечит
+                    ликвидность и защиту интересов держателей токенов и ранних инвесторов.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <img class="roadmap__column-icon" width="68" height="68" src="./img/roadmap/9.png" alt="icon">
+                <h4 class="roadmap__column-title">Блокировка основного количества токенов на срок от 2 до 10 лет</h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>Основная часть токенов SAH будет заблокирована на срок от двух до десяти лет с ежегодной
+                    разблокировкой. Это поможет снизить риски и защитить рынок от манипуляций, обеспечивая стабильность
+                    для инвесторов.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="roadmap__block disabled">
+          <div class="roadmap__block-head">
+            <h4 class="roadmap__block-title">Q1 2025
+              <div class="roadmap__block-sub"><span>SOON </span></div>
+            </h4>
+            <!-- <p class="roadmap__block-text">Aliquet aliquet vitae congue gravida. Nunc vitae adipiscing dictum euismod
+              est viverra consectetur sed. Mollis volutpat amet nunc mauris. Dui tortor fames velit quam eget eget
+              lectus. Sit eu vitae in augue sem at ut.</p> -->
+          </div>
+
+          <div class="roadmap__columns">
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <h4 class="roadmap__column-title">Релиз собственного кошелька</h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>С запуском нашего кошелька пользователи смогут напрямую управлять своими средствами. Кошелек
+                    позволит осуществлять переводы на биржи без необходимости ожидания airdrop, а также продавать
+                    намайненные токены или хранить их для разблокировки дополнительных функций SAHWA Corporation.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <h4 class="roadmap__column-title">Майнинг токена SAH через блокчейн</h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>После листинга токена SAH, майнинг будет осуществляться напрямую через блокчейн, что обеспечит
+                    прозрачность и децентрализацию добычи токенов для всех участников.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <h4 class="roadmap__column-title">Релиз функции голосования (требуется HOLD) </h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>
+                    Мы внедрим функцию голосования в рамках DAO, позволяющую сообществу SAHWA участвовать в принятии
+                    решений, касающихся ключевых должностей в компании, таких как:
+                  </p>
+                  <ul>
+                    <li>- Генеральный директор</li>
+                    <li>- Офицер по безопасности</li>
+                    <li>- HR менеджер</li>
+                    <li>- Директор по маркетингу</li>
+                    <li>- Финансовый директор</li>
+                    <li>- Менеджер по продукту</li>
+                    <li> -Рекрутер</li>
+                    <li> -Копирайтер</li>
+                    <li>- Секретарь</li>
+                    <li>- Бизнес ассистент</li>
+                    <li>- SMM менеджер</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <h4 class="roadmap__column-title">Тестирование и внедрение функции голосования DAO</h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>Система голосования DAO будет протестирована и внедрена для того, чтобы сообщество могло
+                    участвовать в управлении компанией. Несмотря на голосование, окончательное решение останется за CEO
+                    SAHWA.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <h4 class="roadmap__column-title">Расширение функций раздела BANK (требуется HOLD)</h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>Раздел BANK будет иметь расширенные функциональные возможности, включая:</p>
+                  <ul>
+                    <li>- Инвестиции  </li>
+                    <li>- Благотворительность</li>
+                    <li>- Майнинг Bitcoin и других криптовалют (без доступа к BANK и Заводу майнинг будет недоступен)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <h4 class="roadmap__column-title">Расширение функций раздела Завод (требуется HOLD) </h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>Модернизация Завода станет ключевым шагом для разблокировки майнинга Bitcoin, Litecoin и других
+                    криптовалют. Это даст пользователям новые возможности для заработка.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <h4 class="roadmap__column-title">Партнерства с крупными компаниями и инвесторами</h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>Мы активно работаем над привлечением инвесторов и партнеров для усиления позиций SAHWA Corporation.
+                    Эти партнерства помогут расширить нашу экосистему и привлечь новые инвестиции в проект.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <h4 class="roadmap__column-title">Листинг на централизованных биржах (CEX)</h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>В рамках нашей стратегии защиты интересов держателей токенов, мы планируем листинг SAH на
+                    централизованных биржах. Мы придерживаемся осторожного подхода к инструментам с высоким уровнем
+                    риска, таким как деривативы и маржинальная торговля.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap__column">
+              <div class="roadmap__column-top">
+                <h4 class="roadmap__column-title">Запуск игрового Mini App</h4>
+              </div>
+
+              <div class="roadmap__column-bottom">
+                <div class="roadmap__column-texts">
+                  <p>В Mini App будет запущена игра, направленная на развитие логики и интеллектуальных способностей
+                    нашего сообщества. Мы поддерживаем социальные игры, которые способствуют интеллектуальному развитию
+                    участников SAHWA.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="community" data-aos="fade-up" id="contacts">
+  <div class="container">
+    <div class="community__inner">
+      <div class="community__main">
+        <div class="community__info">
+          <h3 class="title community__title">
+            Become Part of the <br />
+            SAHWA Community
+          </h3>
+          <p class="community__text">Follow us on social media to be the first to know about game updates </p>
+        </div>
+
+        <ul class="community__list">
+          <li class="community__item">
+            <a class="community__link" href="#">
+              <picture>
+                <source srcset="./img/community/tg.webp" type="image/webp">
+                <source srcset="./img/community/tg.png" type="image/png">
+                <img class="community__link-img" width="88" height="88" src="./img/community/tg.png" alt="tg">
+              </picture>
+            </a>
+          </li>
+
+          <li class="community__item">
+            <a class="community__link" href="#">
+              <picture>
+                <source srcset="./img/community/x.webp" type="image/webp">
+                <source srcset="./img/community/x.png" type="image/png">
+                <img class="community__link-img" width="88" height="88" src="./img/community/x.png" alt="x">
+              </picture>
+            </a>
+          </li>
+
+          <li class="community__item">
+            <a class="community__link" href="#">
+              <picture>
+                <source srcset="./img/community/youtube.webp" type="image/webp">
+                <source srcset="./img/community/youtube.png" type="image/png">
+                <img class="community__link-img" width="88" height="88" src="./img/community/youtube.png" alt="youtube">
+              </picture>
+            </a>
+          </li>
+
+          <li class="community__item">
+            <a class="community__link" href="#">
+              <picture>
+                <source srcset="./img/community/f.webp" type="image/webp">
+                <source srcset="./img/community/f.png" type="image/png">
+                <img class="community__link-img" width="88" height="88" src="./img/community/f.png" alt="facebook">
+              </picture>
+            </a>
+          </li>
+
+          <li class="community__item">
+            <a class="community__link" href="#">
+              <picture>
+                <source srcset="./img/community/discord.webp" type="image/webp">
+                <source srcset="./img/community/discord.png" type="image/png">
+                <img class="community__link-img" width="84" height="84" src="./img/community/discord.png" alt="discord">
+              </picture>
+            </a>
+          </li>
+
+          <li class="community__item">
+            <a class="community__link" href="#">
+              <picture>
+                <source srcset="./img/community/reddit.webp" type="image/webp">
+                <source srcset="./img/community/reddit.png" type="image/png">
+                <img class="community__link-img" width="74" height="74" src="./img/community/reddit.png" alt="reddit">
+              </picture>
+            </a>
+          </li>
+
+          <li class="community__item">
+            <a class="community__link" href="#">
+              <picture>
+                <source srcset="./img/community/medium.webp" type="image/webp">
+                <source srcset="./img/community/medium.png" type="image/png">
+                <img class="community__link-img" width="84" height="84" src="./img/community/medium.png" alt="medium">
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="community__picture">
+        <picture>
+          <source srcset="./img/community/bg.webp 1x, ./img/community/bg@2x.webp 2x" type="image/webp">
+          <source srcset="./img/community/bg.png 1x, ./img/community/bg@2x.png 2x" type="image/png">
+          <img class="community__pic" width="628" height="652" src="./img/community/bg.png"
+            srcset="./img/community/bg@2x.png" alt="Alt">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="invitation" data-aos="fade-up">
+  <div class="container">
+    <div class="invitation__inner">
+      <div class="invitation__picture">
+        <picture>
+          <source srcset="./img/invitation/city-building.webp 1x, ./img/invitation/city-building@2x.webp 2x"
+            type="image/webp">
+          <source srcset="./img/invitation/city-building.png 1x, ./img/invitation/city-building@2x.png 2x"
+            type="image/png">
+          <img class="invitation__pic" width="542" height="542" src="./img/invitation/city-building.png"
+            srcset="./img/invitation/city-building@2x.png" alt="Alt">
+        </picture>
+      </div>
+
+      <div class="invitation__info">
+        <h3 class="title invitation__title">
+          Приглашаем инвесторов присоединиться к развитию нашего инновационного проекта
+        </h3>
+        <p class="invitation__text">Для дополнительной информации свяжитесь с нами по</p>
+        <div class="invitation__links">
+          <a class="invitation__link btn" href="https://t.me/Sahwacorp" target="_blank">Telegram</a>
+          <a class="invitation__link btn-outline" href="mailto:info@sahwa.info">E-mail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <a class="logo" href="#"><img class="logo__img" width="105" height="70" src="./img/logo.svg" alt="logo"></a>
+
+      <nav class="nav nav--footer">
+        <ul class="menu">
+          <li class="menu__item"><a href="#" class="menu__item-link">About</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link">Featured</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link">Roadmap</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link">Tokenomic</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link">Whitepaper
+              <span class="menu__item-link-sub">SOON</span></a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__item"> <a class="socials__link" href="https://t.me/Sahwacorp" target="_blank"><img
+                class="socials__img" width="20" height="20" src="./img/socials/telegram.svg" alt="telegram"></a></li>
+          <!-- <li class="socials__item"> <a class="socials__link" href="#"><img class="socials__img" width="20" height="20"
+                src="./img/socials/whatsapp.svg" alt="whatsapp"></a></li>
+          <li class="socials__item"> <a class="socials__link" href="#"><img class="socials__img" width="20" height="20"
+                src="./img/socials/vk.svg" alt="vk"></a></li> -->
+          <li class="socials__item"> <a class="socials__link" href="https://twitter.com/Sahwacorp" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M6.91992,6l14.2168,20.72656l-14.9082,17.27344h3.17773l13.13867,-15.22266l10.44141,15.22266h10.01367l-14.87695,-21.6875l14.08008,-16.3125h-3.17578l-12.31055,14.26172l-9.7832,-14.26172z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <!-- <li class="socials__item"> <a class="socials__link" href="#"><img class="socials__img" width="20" height="20"
+                src="./img/socials/instagram.svg" alt="instagram"></a></li> -->
+          <!-- <li class="socials__item"> <a class="socials__link" href="#"><img class="socials__img" width="20" height="20"
+                src="./img/socials/youtube.svg" alt="youtube"></a></li>
+          <li class="socials__item"> <a class="socials__link" href="#"><img class="socials__img" width="20" height="20"
+                src="./img/socials/tiktok.svg" alt="tiktok"></a></li>
+          <li class="socials__item"> <a class="socials__link" href="#"><img class="socials__img" width="20" height="20"
+                src="./img/socials/Yandex_Zen.svg" alt="Yandex_Zen"></a></li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
   </div>
 
+
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./js/scripts.min.js"></script>
 

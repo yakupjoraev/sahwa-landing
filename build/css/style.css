@@ -240,6 +240,11 @@ body.locked {
   transition: 0.2s linear;
 }
 
+.aos-init {
+  -webkit-transform: translateZ(0) !important;
+          transform: translateZ(0) !important;
+}
+
 .header {
   position: relative;
   z-index: 10;
@@ -362,6 +367,7 @@ body.locked {
   position: relative;
   z-index: 1;
   padding: 36px 0;
+  overflow: hidden;
 }
 
 .invitation::before {
